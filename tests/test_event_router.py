@@ -12,7 +12,7 @@ def test_pr_opened():
     assert route_event(
         "pull_request",
         {"action": "opened"}
-    ) == "IGNORE"
+    ) == "REVIEW_PR"
 
 
 def test_unknown_event():
