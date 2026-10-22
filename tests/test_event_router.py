@@ -70,7 +70,7 @@ from event_router import route_event
     "event_name, payload, expected",
     [
         ("pull_request", {"action": "synchronize"}, "REVIEW_PR"),
-        ("pull_request", {"action": "opened"}, "IGNORE"),
+        ("pull_request", {"action": "opened"}, "REVIEW_PR"),
         ("pull_request_review_comment", {
             "action": "created",
             "comment": {"id": 789, "in_reply_to_id": 456}
