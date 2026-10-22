@@ -1,5 +1,6 @@
-from github_event_loader import load_github_event
 from event_router import route_event
+from github_event_loader import load_github_event
+
 
 def main():
 
@@ -12,4 +13,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
